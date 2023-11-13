@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #redirectInfo {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div id="redirectInfo">
+        <p>Connect to Server:</p>
+        <button onclick="redirectToServer()">Connect</button>
+    </div>
+
+    <script>
+        function redirectToServer() {
+            // Redirect the user to the FiveM server
+            window.location.href = "fivem://connect/206.168.173.13:3015";
+            
+            // You can also use window.location.replace as an alternative
+            // window.location.replace("fivem://connect/server-ip:port");
+        }
+    </script>
+</body>
+</html>
